@@ -1,0 +1,31 @@
+#here is my micros full stack app as per the Assignment i developer all the thigns 
+
+1. create two separate folder client and API
+2. client save we have our front end 
+3. API folder have our backend logic
+4. for database use mongodb
+
+# i follow professional standard for folder structure to implement front end and for backend too 
+a. create three separate pages Register, Login, User
+
+  a1. first when the user open our app register page will create api for authenication and for user register user can register itself 
+      after succesfully register user will redirect to another page Login i did use here useNavigation hook to redirect user 
+  
+  a2. when the user will came to login user need to write it's credentials that he/she register just moment ago after successfully login token 
+      will be generate that will store inside sessionStorage after succesful response user will again redirect to our final page where all the 
+      register use will be shown in listView
+  
+  a3. in the User page i create UI to list all the user ther is two button one is for delete and second one is update if the user will click on 
+      any user delete btn that user will be delete instantly using our API because it's a dummy project we can delete any user but for realword 
+      we can only delete our own user
+
+  a4. in the second button when the user will click on update that specific user update container form will be open and user can update it's
+      username and email instantly our own API that i create user have pass password of that same user 
+
+
+please create .env file inside API folder and paste this Variables 
+MONGO_URL='mongodb+srv://mohddanish:Danish1998@digisidekick.rtwmhns.mongodb.net/?retryWrites=true&w=majority'
+JWT_SEC="jsonToken"
+
+Note: also create all json web token we can also use this as middlewear and i can also impelement pagination and sorting that is not a big 
+deal but for now it think it's fine 
